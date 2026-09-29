@@ -25,4 +25,5 @@ def parse_documents(documents, file_type: str):
         )
         parsed_docs.append(parsed_doc)
 
-    return parsed_docs
+    return parsed_docs 
+
