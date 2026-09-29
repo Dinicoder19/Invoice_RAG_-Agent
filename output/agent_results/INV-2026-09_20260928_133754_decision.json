@@ -1,0 +1,77 @@
+{
+    "processed_at": "2026-09-28T13:37:54",
+    "invoice": {
+        "source_file": "data\\invoices\\Invoice_PO-7001.pdf",
+        "invoice_number": "INV-2026-09",
+        "invoice_date": "2026-09-15",
+        "vendor_name": "Global Tech Supplies Ltd.",
+        "po_number": "PO-7001",
+        "currency": "USD",
+        "invoice_amount": 750.0,
+        "tax_amount": 75.0,
+        "document_type": "Invoice",
+        "emergency_flag": "N",
+        "requested_by": null,
+        "cost_center": null,
+        "po_valid_flag": "Y",
+        "vendor_match_flag": "Y",
+        "within_tolerance_flag": "Y",
+        "goods_receipt_flag": "Y",
+        "expense_permitted_without_po_flag": "N",
+        "utility_flag": "N",
+        "recurring_flag": "N",
+        "supplier_valid_flag": "Y",
+        "confidence_score": 0.95
+    },
+    "validation": {
+        "is_valid": true,
+        "errors": [],
+        "warnings": [],
+        "missing_required_fields": [],
+        "missing_control_fields": [],
+        "is_po_invoice": true,
+        "is_emergency_non_po": false,
+        "requires_human_review": false
+    },
+    "policy_query": "PO Invoice po_number present po_valid_flag Y vendor_match_flag Y within_tolerance_flag Y goods_receipt_flag Y supplier_valid_flag Y automated AP workflow",
+    "policy_evidence": [
+        {
+            "rank": 1,
+            "source": "data\\policies\\ap_policy_master.txt",
+            "metadata": {
+                "source": "data\\policies\\ap_policy_master.txt",
+                "parsing_status": "cleaned",
+                "chunking_status": "completed",
+                "file_type": "txt",
+                "chunk_index": 2
+            },
+            "content": "Non-PO Invoice: po_number is blank, expense_permitted_without_po_flag = Y, utility_flag = N, recurring_flag = N, duplicate_flag = N, and mandatory_fields_missing_flag = N."
+        },
+        {
+            "rank": 2,
+            "source": "data\\policies\\ap_policy_master.txt",
+            "metadata": {
+                "parsing_status": "cleaned",
+                "chunking_status": "completed",
+                "chunk_index": 1,
+                "source": "data\\policies\\ap_policy_master.txt",
+                "file_type": "txt"
+            },
+            "content": "Duplicate-Suspected Invoice: duplicate_flag = Y. Route to Human Validation.\nException Invoice: mandatory_fields_missing_flag = Y, supplier_valid_flag = N, or within_tolerance_flag = N for a PO invoice. Route to Human Validation.\nCredit Note: document_type = Credit Note or invoice_amount < 0. Route to Credit Note Processing.\nUtility Invoice: utility_flag = Y. Route to Utility Cost-Centre Owner validation.\nRecurring Invoice: recurring_flag = Y, duplicate_flag = N, and mandatory_fields_missing_flag = N. Route to Subscription or Contract Owner validation.\nPO Invoice: po_number is present, po_valid_flag = Y, vendor_match_flag = Y, within_tolerance_flag = Y, and goods_receipt_flag = Y."
+        }
+    ],
+    "decision": {
+        "classification_result": {
+            "invoice_id": "INV-2026-09",
+            "predicted_classification": "PO Invoice",
+            "predicted_route": "Automated AP Workflow / Applicable Approval",
+            "reason": "PO exists and PO, vendor, tolerance, goods receipt, and supplier checks all passed.",
+            "review_required": false
+        },
+        "workflow_route": "Automated AP Workflow / Applicable Approval",
+        "decision_status": "READY_FOR_AP_PROCESSING",
+        "requires_human_review": false,
+        "workflow_reason": "Required PO validation, vendor matching, tolerance, goods receipt, and supplier verification controls passed."
+    },
+    "ai_explanation": "The invoice facts indicate that the invoice is a PO invoice with a valid PO number, vendor match, tolerance, goods receipt, and supplier checks. The validation result confirms that the invoice is valid and does not require human review. The authoritative workflow decision states that the invoice is classified as a PO invoice and requires no human review. The AP policy evidence supports this decision, as the invoice meets all the required controls for a PO invoice, including a valid PO number and vendor match. Therefore, the invoice can proceed through the Automated AP Workflow / Applicable Approval route without requiring human review."
+}

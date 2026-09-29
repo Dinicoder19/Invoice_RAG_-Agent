@@ -1,0 +1,51 @@
+invoice_id,invoice_number,vendor_name,vendor_code,invoice_date,currency,invoice_amount,tax_amount,po_number,document_type,po_valid_flag,vendor_match_flag,within_tolerance_flag,goods_receipt_flag,expense_permitted_without_po_flag,utility_flag,recurring_flag,duplicate_flag,mandatory_fields_missing_flag,supplier_valid_flag,confidence_score,expected_classification,expected_route,notes
+INV-001,BRI-1001,Bright Manufacturing,VEN-001,2026-02-02,USD,750,75.0,PO-7001,Invoice,Y,Y,Y,Y,N,N,N,N,N,Y,0.95,PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-002,CLO-1002,CloudNet Telecom,VEN-002,2026-03-03,USD,1000,100.0,PO-7002,Invoice,Y,Y,Y,Y,N,N,N,N,N,Y,0.95,PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-003,DEL-1003,Delta Energy,VEN-003,2026-04-04,USD,1250,125.0,PO-7003,Invoice,Y,Y,Y,Y,N,N,N,N,N,Y,0.95,PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-004,EVE-1004,Evergreen Software,VEN-004,2026-05-05,USD,1500,150.0,PO-7004,Invoice,Y,Y,Y,Y,N,N,N,N,N,Y,0.95,PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-005,FRE-1005,FreshBuild Services,VEN-005,2026-06-06,USD,1750,175.0,PO-7005,Invoice,Y,Y,Y,Y,N,N,N,N,N,Y,0.95,PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-006,GLO-1006,Global Logistics,VEN-006,2026-07-07,USD,2000,200.0,PO-7006,Invoice,Y,Y,Y,Y,N,N,N,N,N,Y,0.95,PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-007,HAR-1007,Harbor Facilities,VEN-007,2026-08-08,USD,2250,225.0,PO-7007,Invoice,Y,Y,Y,Y,N,N,N,N,N,Y,0.95,PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-008,INS-1008,Insight Consulting,VEN-008,2026-09-09,USD,2500,250.0,PO-7008,Invoice,Y,Y,Y,Y,N,N,N,N,N,Y,0.95,PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-009,JUP-1009,Jupiter Industrial,VEN-009,2026-01-10,USD,2750,275.0,PO-7009,Invoice,Y,Y,Y,Y,N,N,N,N,N,Y,0.95,PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-010,ALP-1010,Alpha Office Supplies,VEN-010,2026-02-11,USD,3000,300.0,PO-7010,Invoice,Y,Y,Y,Y,N,N,N,N,N,Y,0.95,PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-011,BRI-1011,Bright Manufacturing,VEN-011,2026-03-12,USD,3250,325.0,PO-7011,Invoice,Y,Y,Y,Y,N,N,N,N,N,Y,0.95,PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-012,CLO-1012,CloudNet Telecom,VEN-012,2026-04-13,USD,3500,350.0,PO-7012,Invoice,Y,Y,Y,Y,N,N,N,N,N,Y,0.95,PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-013,DEL-1013,Delta Energy,VEN-013,2026-05-14,USD,2640,264.0,,Invoice,N,N,Y,N,Y,N,N,N,N,Y,0.95,Non-PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-014,EVE-1014,Evergreen Software,VEN-014,2026-06-15,USD,2820,282.0,,Invoice,N,N,Y,N,Y,N,N,N,N,Y,0.95,Non-PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-015,FRE-1015,FreshBuild Services,VEN-015,2026-07-16,USD,3000,300.0,,Invoice,N,N,Y,N,Y,N,N,N,N,Y,0.95,Non-PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-016,GLO-1016,Global Logistics,VEN-016,2026-08-17,USD,3180,318.0,,Invoice,N,N,Y,N,Y,N,N,N,N,Y,0.95,Non-PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-017,HAR-1017,Harbor Facilities,VEN-017,2026-09-18,USD,3360,336.0,,Invoice,N,N,Y,N,Y,N,N,N,N,Y,0.95,Non-PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-018,INS-1018,Insight Consulting,VEN-018,2026-01-19,USD,3540,354.0,,Invoice,N,N,Y,N,Y,N,N,N,N,Y,0.95,Non-PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-019,JUP-1019,Jupiter Industrial,VEN-019,2026-02-20,USD,3720,372.0,,Invoice,N,N,Y,N,Y,N,N,N,N,Y,0.95,Non-PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-020,ALP-1020,Alpha Office Supplies,VEN-020,2026-03-21,USD,3900,390.0,,Invoice,N,N,Y,N,Y,N,N,N,N,Y,0.95,Non-PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-021,BRI-1021,Bright Manufacturing,VEN-021,2026-04-22,USD,4080,408.0,,Invoice,N,N,Y,N,Y,N,N,N,N,Y,0.95,Non-PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-022,CLO-1022,CloudNet Telecom,VEN-022,2026-05-23,USD,4260,426.0,,Invoice,N,N,Y,N,Y,N,N,N,N,Y,0.95,Non-PO Invoice,Automated AP Workflow / Applicable Approval,
+INV-023,HAR-1023,Harbor Facilities,VEN-023,2026-06-24,USD,1975,197.5,,Invoice,N,N,Y,N,N,Y,N,N,N,Y,0.95,Utility Invoice,Automated AP Workflow / Applicable Approval,
+INV-024,DEL-1024,Delta Energy,VEN-024,2026-07-25,USD,2050,205.0,,Invoice,N,N,Y,N,N,Y,N,N,N,Y,0.95,Utility Invoice,Automated AP Workflow / Applicable Approval,
+INV-025,CLO-1025,CloudNet Telecom,VEN-025,2026-08-26,USD,2125,212.5,,Invoice,N,N,Y,N,N,Y,N,N,N,Y,0.95,Utility Invoice,Automated AP Workflow / Applicable Approval,
+INV-026,HAR-1026,Harbor Facilities,VEN-026,2026-09-27,USD,2200,220.0,,Invoice,N,N,Y,N,N,Y,N,N,N,Y,0.95,Utility Invoice,Automated AP Workflow / Applicable Approval,
+INV-027,DEL-1027,Delta Energy,VEN-027,2026-01-01,USD,2275,227.5,,Invoice,N,N,Y,N,N,Y,N,N,N,Y,0.95,Utility Invoice,Automated AP Workflow / Applicable Approval,
+INV-028,CLO-1028,CloudNet Telecom,VEN-028,2026-02-02,USD,2350,235.0,,Invoice,N,N,Y,N,N,Y,N,N,N,Y,0.95,Utility Invoice,Automated AP Workflow / Applicable Approval,
+INV-029,HAR-1029,Harbor Facilities,VEN-029,2026-03-03,USD,2425,242.5,,Invoice,N,N,Y,N,N,Y,N,N,N,Y,0.95,Utility Invoice,Automated AP Workflow / Applicable Approval,
+INV-030,DEL-1030,Delta Energy,VEN-030,2026-04-04,USD,2500,250.0,,Invoice,N,N,Y,N,N,Y,N,N,N,Y,0.95,Utility Invoice,Automated AP Workflow / Applicable Approval,
+INV-031,CLO-1031,CloudNet Telecom,VEN-031,2026-05-05,USD,4420,442.0,,Invoice,N,N,Y,N,N,N,Y,N,N,Y,0.95,Recurring Invoice,Automated AP Workflow / Applicable Approval,
+INV-032,HAR-1032,Harbor Facilities,VEN-032,2026-06-06,USD,4540,454.0,,Invoice,N,N,Y,N,N,N,Y,N,N,Y,0.95,Recurring Invoice,Automated AP Workflow / Applicable Approval,
+INV-033,EVE-1033,Evergreen Software,VEN-033,2026-07-07,USD,4660,466.0,,Invoice,N,N,Y,N,N,N,Y,N,N,Y,0.95,Recurring Invoice,Automated AP Workflow / Applicable Approval,
+INV-034,CLO-1034,CloudNet Telecom,VEN-034,2026-08-08,USD,4780,478.0,,Invoice,N,N,Y,N,N,N,Y,N,N,Y,0.95,Recurring Invoice,Automated AP Workflow / Applicable Approval,
+INV-035,HAR-1035,Harbor Facilities,VEN-035,2026-09-09,USD,4900,490.0,,Invoice,N,N,Y,N,N,N,Y,N,N,Y,0.95,Recurring Invoice,Automated AP Workflow / Applicable Approval,
+INV-036,EVE-1036,Evergreen Software,VEN-036,2026-01-10,USD,5020,502.0,,Invoice,N,N,Y,N,N,N,Y,N,N,Y,0.95,Recurring Invoice,Automated AP Workflow / Applicable Approval,
+INV-037,HAR-1037,Harbor Facilities,VEN-037,2026-02-11,USD,-1950,-195.0,,Credit Note,N,N,Y,N,N,N,N,N,N,Y,0.95,Credit Note,Credit Note Processing,
+INV-038,INS-1038,Insight Consulting,VEN-038,2026-03-12,USD,-2000,-200.0,,Credit Note,N,N,Y,N,N,N,N,N,N,Y,0.95,Credit Note,Credit Note Processing,
+INV-039,JUP-1039,Jupiter Industrial,VEN-039,2026-04-13,USD,-2050,-205.0,,Credit Note,N,N,Y,N,N,N,N,N,N,Y,0.95,Credit Note,Credit Note Processing,
+INV-040,ALP-1040,Alpha Office Supplies,VEN-040,2026-05-14,USD,-2100,-210.0,,Credit Note,N,N,Y,N,N,N,N,N,N,Y,0.95,Credit Note,Credit Note Processing,
+INV-041,BRI-1041,Bright Manufacturing,VEN-041,2026-06-15,USD,2440,244.0,,Invoice,N,N,Y,N,N,N,N,Y,N,Y,0.95,Duplicate-Suspected Invoice,Human Validation,"Matches previously processed supplier, amount, and date"
+INV-042,CLO-1042,CloudNet Telecom,VEN-042,2026-07-16,USD,2480,248.0,,Invoice,N,N,Y,N,N,N,N,Y,N,Y,0.95,Duplicate-Suspected Invoice,Human Validation,"Matches previously processed supplier, amount, and date"
+INV-043,DEL-1043,Delta Energy,VEN-043,2026-08-17,USD,2520,252.0,,Invoice,N,N,Y,N,N,N,N,Y,N,Y,0.95,Duplicate-Suspected Invoice,Human Validation,"Matches previously processed supplier, amount, and date"
+INV-044,EVE-1044,Evergreen Software,VEN-044,2026-09-18,USD,2560,256.0,,Invoice,N,N,Y,N,N,N,N,Y,N,Y,0.95,Duplicate-Suspected Invoice,Human Validation,"Matches previously processed supplier, amount, and date"
+INV-045,FRE-1045,FreshBuild Services,VEN-045,2026-01-19,USD,2600,260.0,,Invoice,N,N,Y,N,N,N,N,Y,N,Y,0.95,Duplicate-Suspected Invoice,Human Validation,"Matches previously processed supplier, amount, and date"
+INV-046,UNK-1046,Unknown Supplier,VEN-046,2026-02-20,USD,1250,125.0,PO-9046,Invoice,Y,N,Y,Y,N,N,N,N,N,N,0.95,Exception Invoice,Human Validation,Supplier is invalid
+INV-047,BRI-1047,Bright Manufacturing,VEN-047,2026-03-21,USD,2400,240.0,PO-9047,Invoice,Y,Y,N,Y,N,N,N,N,N,Y,0.95,Exception Invoice,Human Validation,Amount exceeds tolerance
+INV-048,ALP-1048,Alpha Office Supplies,VEN-048,2026-04-22,USD,450,45.0,,Invoice,N,N,Y,N,N,N,N,N,Y,Y,0.95,Exception Invoice,Human Validation,Mandatory invoice field missing
+INV-049,INS-1049,Insight Consulting,VEN-049,2026-05-23,USD,750,75.0,,Invoice,N,N,Y,N,Y,N,N,N,N,Y,0.88,Non-PO Invoice,Human Validation,Correct class but confidence below threshold
+INV-050,GLO-1050,Global Logistics,VEN-050,2026-06-24,USD,1800,180.0,PO-7050,Invoice,Y,Y,Y,Y,N,N,N,N,N,Y,0.87,PO Invoice,Human Validation,Correct class but confidence below threshold

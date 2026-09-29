@@ -1,0 +1,50 @@
+ACCOUNTS PAYABLE POLICY - MATCHABLE DATASET v1
+
+Classification precedence: Duplicate-Suspected Invoice, Exception Invoice, Credit Note, Utility Invoice, Recurring Invoice, PO Invoice, Non-PO Invoice.
+
+Duplicate-Suspected Invoice: duplicate_flag = Y. Route to Human Validation.
+Exception Invoice: mandatory_fields_missing_flag = Y, supplier_valid_flag = N, or within_tolerance_flag = N for a PO invoice. Route to Human Validation.
+Credit Note: document_type = Credit Note or invoice_amount < 0. Route to Credit Note Processing.
+Utility Invoice: utility_flag = Y. Route to Utility Cost-Centre Owner validation.
+Recurring Invoice: recurring_flag = Y, duplicate_flag = N, and mandatory_fields_missing_flag = N. Route to Subscription or Contract Owner validation.
+PO Invoice: po_number is present, po_valid_flag = Y, vendor_match_flag = Y, within_tolerance_flag = Y, and goods_receipt_flag = Y.
+Non-PO Invoice: po_number is blank, expense_permitted_without_po_flag = Y, utility_flag = N, recurring_flag = N, duplicate_flag = N, and mandatory_fields_missing_flag = N.
+
+Approval matrix:
+- Amount <= 1000: Department Manager approval.
+- Amount > 1000 and <= 5000: Department Head approval.
+- Amount > 5000: Finance Controller approval.
+- Credit notes, duplicates, and exceptions use their special routes.
+
+Confidence routing: confidence_score >= 0.90 is eligible for the next automated AP workflow step; below 0.90 routes to Human Validation.
+
+EMERGENCY NON-PO INVOICE POLICY
+
+Emergency non-PO invoices are permitted only when an urgent business,
+facility, safety, operational-continuity, or critical-service requirement
+prevents the normal purchase-order process.
+
+An emergency non-PO invoice must include:
+- a clear emergency justification,
+- the requester name,
+- the responsible cost center,
+- invoice amount and vendor details.
+
+Emergency non-PO invoices require Cost Center Manager approval before
+Accounts Payable processing.
+
+If requester, cost center, vendor, amount, or emergency justification is
+missing, route the invoice to AP Exception Review / Human Validation.
+
+PO MATCH EVIDENCE POLICY
+
+For PO invoices, PO validity, vendor matching, tolerance validation,
+goods-receipt confirmation, and supplier verification must be available
+before automated AP processing.
+
+If one or more required PO-match controls are missing, unknown, or not
+available from ERP, PO, vendor-master, or goods-receipt data, route the
+invoice to the AP Validation Queue.
+
+Do not treat an UNKNOWN control as a failed control. UNKNOWN means that
+additional validation evidence is required.

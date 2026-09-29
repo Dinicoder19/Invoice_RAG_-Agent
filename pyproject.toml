@@ -1,0 +1,10 @@
+[project]
+name = "invoice-rag-agent"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "pillow>=12.3.0",
+    "pymupdf>=1.28.2",
+    "pytesseract>=0.3.13",
+    "reportlab>=5.0.1",
+]

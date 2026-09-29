@@ -1,0 +1,12 @@
+rule_id,invoice_type,min_amount,max_amount,approval_role,route
+A01,PO Invoice,0.0,1000.0,Department Manager,Three-way match processing
+A02,PO Invoice,1000.01,5000.0,Department Head,Three-way match processing
+A03,PO Invoice,5000.01,,Finance Controller,Three-way match processing
+A04,Non-PO Invoice,0.0,1000.0,Department Manager,Approval required before payment
+A05,Non-PO Invoice,1000.01,5000.0,Department Head,Approval required before payment
+A06,Non-PO Invoice,5000.01,,Finance Controller,Approval required before payment
+A07,Utility Invoice,0.0,,Utility Cost-Centre Owner,Utility validation
+A08,Recurring Invoice,0.0,,Subscription or Contract Owner,Recurring validation
+A09,Duplicate-Suspected Invoice,0.0,,AP Analyst,Human Validation
+A10,Exception Invoice,0.0,,AP Analyst,Human Validation
+A11,Credit Note,,,Credit Memo Reviewer,Credit Note Processing
